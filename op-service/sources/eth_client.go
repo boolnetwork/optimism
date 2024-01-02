@@ -140,7 +140,7 @@ func NewEthClient(client client.RPC, log log.Logger, metrics caching.Metrics, co
 	return &EthClient{
 		client:            client,
 		recProvider:       recProvider,
-		trustRPC:          config.TrustRPC,
+		trustRPC:          true,
 		mustBePostMerge:   config.MustBePostMerge,
 		log:               log,
 		transactionsCache: caching.NewLRUCache[common.Hash, types.Transactions](metrics, "txs", config.TransactionsCacheSize),

@@ -16,6 +16,7 @@ export enum L1ChainID {
   MAINNET = 1,
   GOERLI = 5,
   SEPOLIA = 11155111,
+  BOOL = 47,
   HARDHAT_LOCAL = 31337,
   BEDROCK_LOCAL_DEVNET = 900,
 }

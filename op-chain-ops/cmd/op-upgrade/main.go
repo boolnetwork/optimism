@@ -253,6 +253,9 @@ func toSuperchainName(chainID uint64) (string, error) {
 	if chainID == 11155111 {
 		return "sepolia", nil
 	}
+	if chainID == 47 {
+		return "bool", nil
+	}
 	return "", fmt.Errorf("unsupported chain ID %d", chainID)
 }
 
